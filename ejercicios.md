@@ -134,3 +134,68 @@
     else: 
         print("Intentalo de nuevo, edad invalida")            
     
+
+## Listas 
+        lista=[22,True,"lista",[1,2]]
+        #print(lista)
+        #print(lista[0])
+        #print(lista[1])
+        #print(lista[2])
+        print(lista[3][0])
+        
+        lista1=[22,"Hola",3,5,3.14]
+        lista2=["Mundo",0.1416]
+        
+        print(str(lista1[1])+" "+str(lista2[0]))
+        print(float(lista1[2])+float(lista2[1]))
+        lista3=[22,"Hola",3,5,3.14,[25,52,[1,2]],10]
+        print(lista3[5][2][0])
+        
+        # Ejercicio : Declarar 3 listas que vn a contener
+        #Primera: numeros del 1-15
+        #Segunda: Días de la semana 
+        #Tercera: Dos listas Primera: doce meses del año; Segunda:año 2001-2002
+        #Imprimir la fecha de 1 de sep del 2001
+        #imprimir 8/12/2002
+        # imprimir 29 de agosto del 2023
+        
+        listaA=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+        listaB=["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+        listaC=[["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],[2001,2002]]
+        print(str(listaA[0])+ " de " +str(listaC[0][8])+ " " + str(listaC[1][0]))  #str(listaA[0]))+ " de " +
+        print(str(listaA[7])+ " de " +str(listaC[0][11])+ " " + str(listaC[1][1]))
+        print(int(listaA[13])+int(listaA[14]), " " + str(listaC[0][7])+ " " + str(listaC[1][1]) ) 
+
+
+
+## Tuplas 
+        tupla=(12,22,32)
+        print(tupla[2])
+
+## Ejercicio de Listas 
+        #En una sola lista tener tres sub lista 
+        #1-31
+        #enero-dic
+        # 2000
+        # Imprimir cumpleaños de 22/11/1984
+        #Imprimir 7/01/1943
+        #12/11/1982
+        lista=[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],[2000]]
+        #print(lista[0][21],"",lista[1][10],"",lista[2][0]-16)
+        #print(lista[0][6],"",lista[1][0],"",lista[2][0]-57)
+        #print(lista[0][11],"",lista[1][10],"",lista[2][0]-18)
+
+
+## Otro ejercicio de Listas con ciclos
+        lista1=[22,"Hola",3,5,3.14,[65,25],90]
+        
+        print (lista1)
+        
+        for x in lista1:
+            print(x)
+        
+        for i in range(0,5):
+        	print(lista1[i])
+
+
+        
