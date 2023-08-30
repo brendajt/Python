@@ -211,4 +211,80 @@
                 print(i, "Es impar")
             x+=1     
 
-### Es importante recalcar que x actua como entero mientras que i me va a mostrar los nombres de cada mes             
+### Es importante recalcar que x actua como entero mientras que i me va a mostrar los nombres de cada mes    
+
+
+## Ejercicios 30/08/23
+
+### Serie de Fibonacci con Listas 
+        #a=0
+        #b=1
+        #for i in range(11):
+            #print(a,"*"*a)
+            #a,b=b,a+b
+
+##### Hacer lo anterior con Listas
+
+        x=[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        for f in range(0,15):
+            if f>1:
+                x[f]=x[f-1]+x[f-2]
+            print(x[f],end="")
+            for i in range(0,x[f]):
+                print("*",end="")
+            print("")
+
+
+## Programa que vaya del 1-50 en una lista se guardan los numeros pares y en otra los impares y en la tercer lista que contenga el factorial de los primeros 10 numeros 
+
+        pares=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        impares=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        x=0 # x y y son los indices de cada lista 
+        y=0
+        fact=1
+        for i in range(0,50): # i es el valor 
+            if(i%2==0):
+        	    pares[x]=i
+        	    x+=1
+            else:
+                impares[y]=i
+                y+=1
+            if i<=10:
+                fact=1
+                for f in range(1,i+1):
+                    fact=fact*f
+                    print("El factorial de: ",i," es: ",fact)
+        
+        print(pares)
+        print(impares)
+
+### Ejemplo de la conversion de listas a tuplas y el editar tales listas
+        lista=[1,2,3,4,5]
+        sublista=[6.1,6.2]
+        print(lista)
+        lista.append(6)
+        print(lista)
+        lista.append(sublista)
+        print(lista)
+        
+        tupla=(1,2,3,4,5)
+        print(tupla)
+        tupla=list(tupla)
+        tupla.append(6)
+        tupla=tuple(tupla)
+        print(tupla)
+
+## Un programa que me pida un numero (numero de estudiantes), solicitar la calificacion de cada uno de los estudiantes, guardar en un lista y entregar el promedio de toda la clase 
+### Una lista vacía se declara sin llenar los corchetes 
+            calif=[]
+            N=int(input("Digite el número de alumnos: "))
+            for i in range(0,N):
+                calif.append(int(input("Digita la calificación del alumno: ")))
+            promedio=0
+            for i in calif:
+                promedio+=i
+            print(promedio/N)
+                    
+        
+
+            
