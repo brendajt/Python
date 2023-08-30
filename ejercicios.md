@@ -197,5 +197,18 @@
         for i in range(0,5):
         	print(lista1[i])
 
-
+### Me dice si los meses son pares o impares 
+           listaA=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+        listaB=["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+        listaC=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
         
+        ## Con un ciclo decir si es un dia par o impar o un mes par o impar
+        x=1
+        for i in listaC:
+            if x%2==0:
+                print(i,"Es par")
+            else: 
+                print(i, "Es impar")
+            x+=1     
+
+### Es importante recalcar que x actua como entero mientras que i me va a mostrar los nombres de cada mes             
