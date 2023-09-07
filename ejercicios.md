@@ -285,6 +285,54 @@
                 promedio+=i
             print(promedio/N)
                     
-        
+### TAREA 
+
+## Hipotenusas
+    import math
+    
+    def cal_hip(a, b):
+        c = math.sqrt(a ** 2 + b ** 2)
+        return c
+    a = int(input("Ingrese la longitud del primer cateto: "))
+    b = int(input("Ingrese la longitud del segundo cateto: "))
+    c = cal_hip(a, b)
+    
+    print("La longitud de la hipotenusa es: ", c)
+
+
+
+## Formula gral 
+
+    import math
+    def calcular_raices(a, b, c):
+        raiz = b**2 - 4*a*c
+    
+        if raiz > 0:
+            x1 = (-b + math.sqrt(raiz)) / (2*a)
+            x2 = (-b - math.sqrt(raiz)) / (2*a)
+            return x1, x2
+        elif raiz == 0:
+            x1 = -b / (2*a)
+            return x1
+        else:
+            # Raíces complejas (no reales)
+            print("La raiz es negativa, por lo tanto no existe en los reales")
+    
+    # Solicitar los coeficientes al usuario
+    a = float(input("Ingrese el coeficiente de 'a': "))
+    b = float(input("Ingrese el coeficiente de 'b': "))
+    c = float(input("Ingrese el coeficiente de 'c': "))
+    
+    # Calcular las raíces utilizando la función
+    raices = calcular_raices(a, b, c)
+    
+    # Imprimir el resultado
+    if isinstance(raices, tuple):
+        print(f"Las raíces son: {raices[0]} y {raices[1]}")
+    elif isinstance(raices, complex):
+        print(f"Las raíces son complejas: {raices}")
+    else:
+        print(f"La raíz es: {raices}")
+
 
             
