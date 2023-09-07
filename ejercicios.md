@@ -335,4 +335,42 @@
         print(f"La raíz es: {raices}")
 
 
+
+
+
+            # Función para calcular el promedio de un estudiante
+    def calcular_promedio(calificaciones):
+        if len(calificaciones) == 0:
+            return 0
+        suma = sum(calificaciones)
+        promedio = suma / len(calificaciones)
+        return promedio
+    
+    # Solicitar el número de alumnos
+    num_alumnos = int(input("Ingrese el número de alumnos: "))
+    
+    # Lista para almacenar los promedios de cada estudiante
+    promedios_alumnos = []
+    
+    # Ciclo para ingresar las calificaciones de cada alumno
+    for i in range(num_alumnos):
+        num_materias = int(input(f"Ingrese el número de materias para el estudiante {i + 1}: "))
+        calificaciones = []
+        
+        # Ciclo para ingresar las calificaciones de cada materia
+        for j in range(num_materias):
+            calificacion = float(input(f"Ingrese la calificación de la materia {j + 1} para el estudiante {i + 1}: "))
+            calificaciones.append(calificacion)
+        
+        # Calcular el promedio del estudiante y agregarlo a la lista
+        promedio = calcular_promedio(calificaciones)
+        promedios_alumnos.append(promedio)
+    
+    # Imprimir la lista de promedios
+    print("\nPromedios de los estudiantes:")
+    for i, promedio in enumerate(promedios_alumnos, start=1):
+        print(f"Estudiante {i}: {promedio}")
+
+
+
             
