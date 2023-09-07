@@ -325,7 +325,86 @@
     
     # Calcular las raíces utilizando la función
     raices = calcular_raices(a, b, c)
-    
-  
 
+
+
+
+
+ ## Ejercicios de clase 07/09/2023
+### Archivos 
+
+        #operaciones básicas 
+    def operacion(x1,x2,op):
+        if (op==1):
+            return x1+x2
+        if (op==2):
+            return x1-x2
+        if (op==3):
+            return x1*x2
+        if (op==4):
+            return x1/x2
+    ********************************
+    En otro archivo 
+    
+    import calculadora
+    print(calculadora.operacion(2,2,1))
+        
+## Otro ejercicio
+
+        # Ingresar un número, si me dice que si es par y si no es impar 
+        
+        def par(x1):
+            if (x1%2==0):
+                f_si()
+            else:
+                f_no()
+        
+        def f_si():
+            print("Es PAR")
+        
+        def f_no():
+            print("No es PAR")
+        
+            *******************
+            En otro Archivo 
+        import pares
+        numero=int(input("digite un numero : "))
+        print(pares.par(numero))
+
+
+## Otro Ejercicio 
+
+        base={"ernesto@pilares":123,"maria@pilares":456,"luis@pilares":789}
+        
+        def sesion(usuario,contrasenia):
+            if (base[str(usuario)]==contrasenia):
+        	    f_si()
+            else:
+                f_no()
+        
+        def f_si():
+            print("             **")
+            print("            ** ")
+            print("          **   ")
+            print("**      **     ")
+            print("  **  **       ")
+            print("    **         ")
+        
+        def f_no():
+            print("**         **")
+            print("  **      ** ")
+            print("   **    **  ")
+            print("      **     ")
+            print("      **     ")
+            print("   **    **  ")
+            print("  **      ** ")
+            print("**         **")
+          
+        En otro archivo 
+        
+        import login
+        usuario=str(input("Digite el usuario\n"))
+        contrasenia=int(input("Digite la contraseña\n"))
+        
+        login.sesion(usuario,contrasenia)
             
