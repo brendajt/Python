@@ -408,3 +408,46 @@
         
         login.sesion(usuario,contrasenia)
             
+## Ejercicios de la clase del 08/09/23
+
+        #Calculadora dentro de la función hay resta, suma, muliplicacion y división 
+        def cal(x1,x2,op):
+            if(op==1):
+                print(x1+x2) 
+            if(op==2):
+                print(x1-x2)
+            if(op==3):
+                print(x1*x2)
+            if(op==4):
+                print(x1/x2)
+        
+        ****************** En otro archivo ******************
+        import nuevo
+        nuevo.cal(2,2,1)
+
+ ### Crear un programa que convierta °C a °F 
+        def cov(c):
+            f=(c*1.8)+32
+            print(f)  
+        ****************** En otro archivo ******************
+        import FaC
+        x=float(input("digita"))
+        FaC.cov(x)
+
+### Un programa con el uso de archivos que solo acepte numeros del 0 al 1000, al ingresar un numero me diga si es o no Fibonacci
+        f=[0,1]
+        def fibo(valor):
+            for i in range (0,17):
+                f.append(f[i]+f[i+1])
+                if(int(valor)==f[i]):
+                    return "Si"
+            return "No"
+         ****************** En otro archivo ******************
+        import funcion
+        esNum=True
+        while(esNum):
+            x=int(input("Digita un valor\n"))
+            if(x>0 and x<1000):
+                esNum=False
+                print(funcion.fibo(x))
+        
